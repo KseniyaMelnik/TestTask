@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/KseniyaMelnik/TestTask/issues"
   },
-  "homepage": "https://github.com/KseniyaMelnik/TestTask#readme",
+  "homepage": "https://kseniyamelnik.github.io/TestTask/",
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.20.2",

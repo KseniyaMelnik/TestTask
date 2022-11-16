@@ -31,8 +31,6 @@ class Form extends Component {
     this.button.setDisabled(true)
     this.button.element.innerHTML = `<i class="fa-solid fa-pen-to-square button_text"></i>`
     const buttonText = new Component(this.button.element, 'div', ['button_text'], 'заказать')
-
-
 }
 
     updateInputValue(event: Event){

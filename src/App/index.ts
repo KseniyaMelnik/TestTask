@@ -1,7 +1,7 @@
 import Form from './../components/Form'
 
 class App {
-     form: Form
+    form: Form
     constructor(private root: HTMLElement) {
     }
 

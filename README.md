@@ -1,15 +1,12 @@
-# 🚀 Welcome to your new awesome project!
+### 🚀 This simple web application verifies any phone number in any country.
+🛠 For testing purposes only.
 
-This project has been created using **webpack-cli**, you can now run
+This project has been created using **PhoneNumberValidateFree API** 
+ [link](https://rapidapi.com/larroyouy70/api/phonenumbervalidatefree/)
 
-```
-npm run build
-```
+In the project directory, you can run:
 
-or
+### `npm run start`
 
-```
-yarn build
-```
-
-to bundle your application
+Runs the app in the development mode.
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
