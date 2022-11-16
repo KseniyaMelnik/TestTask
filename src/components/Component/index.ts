@@ -12,6 +12,9 @@ class Component {
         this.element.textContent = content;
         parentNode && parentNode.append(this.element);
     }
+    remove(): void {
+        this.element.remove();
+      }
 }
 
 export default Component;
