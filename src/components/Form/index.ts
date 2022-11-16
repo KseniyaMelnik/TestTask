@@ -29,7 +29,9 @@ class Form extends Component {
     this.button = new Button(this.element, '', ['button'])
     this.button.onClick = () => this.checkNumber(this.inputValue)
     this.button.setDisabled(true)
+    this.button.element.innerHTML = `<i class="fa-solid fa-pen-to-square button_text"></i>`
     const buttonText = new Component(this.button.element, 'div', ['button_text'], 'заказать')
+
 
 }
 
@@ -51,7 +53,7 @@ class Form extends Component {
         const input = event.currentTarget as HTMLInputElement;
         const value = input.value;
         if (value.length < 1) {
-          this.element.classList.add("input_error");
+          this.inputWrapper.element.classList.add("input-container_error");
           this.validationMessage = new ValidationMessage(
             this.element,
             "div",
@@ -59,7 +61,7 @@ class Form extends Component {
             "Поле не должно быть пустым"
           );
         } else {
-          this.element.classList.remove("input_error");
+          this.inputWrapper.element.classList.remove("input-container_error");
           this.validationMessage && this.validationMessage.remove();
         }
       }

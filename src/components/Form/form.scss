@@ -1,7 +1,11 @@
 .form {
     margin: 30px 0 0 30px;
     display: flex;
-   
+    @media (max-width: 720px) {
+        margin: 0 auto;
+        max-width: 350px;
+        padding-top: 30px;
+    }
 }
 
 .input-container {
@@ -14,6 +18,9 @@
     @media (max-width: 720px) {
         max-width: 200px;
         transform:none
+    }
+    &_error {
+        border: 2px red solid;
     }
 }
 
@@ -40,6 +47,10 @@
     color: white;
     background-color: red;
     transform: skewX(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
     cursor: pointer;
     @media (max-width: 720px) {
         transform:none
