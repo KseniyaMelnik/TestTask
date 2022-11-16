@@ -1,6 +1,6 @@
 import { baseUrl, options } from "./api"
 
-export const validatePhoneNumber = async (
+export const checkPhoneNumber = async (
     number: string,
 ) : Promise<{country?: string, message: string} | null> => {
     try {
