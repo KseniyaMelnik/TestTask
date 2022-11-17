@@ -1,12 +1,11 @@
-import Form from './../components/Form'
+import Form from './../components/Form';
 
 class App {
-    form: Form
-    constructor(private root: HTMLElement) {
-    }
+    form: Form;
+    constructor(private root: HTMLElement) {}
 
     init(): void {
-     this.form = new Form(this.root)
+        this.form = new Form(this.root);
     }
 }
 

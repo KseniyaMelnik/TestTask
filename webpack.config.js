@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
+const EslingPlugin = require('eslint-webpack-plugin');
 
 const stylesHandler = isProduction
   ? MiniCssExtractPlugin.loader
@@ -23,6 +24,7 @@ const config = {
     new HtmlWebpackPlugin({
       template: "index.html",
     }),
+    new EslingPlugin({ extensions: 'ts' })
   ],
   module: {
     rules: [

@@ -1,22 +1,22 @@
-import Component from "../Component";
+import Component from '../Component';
 
 class Button extends Component {
-    onClick: () => void = () => {}
+    onClick: () => void = () => {};
 
-    constructor(parentNode: HTMLElement, text: string, styles?: string[], disabled=false) {
-        super(parentNode, 'button', styles, text)
+    constructor(parentNode: HTMLElement, text: string, styles?: string[], disabled = false) {
+        super(parentNode, 'button', styles, text);
 
-        this.element.addEventListener('click', ()=> this.onClick())
+        this.element.addEventListener('click', () => this.onClick());
 
-        if (disabled) this.setDisabled(true)
+        if (disabled) this.setDisabled(true);
     }
 
     setDisabled(value = false): void {
-        this.element.toggleAttribute('disabled', value)
+        this.element.toggleAttribute('disabled', value);
     }
 
     removeDisabled(): void {
-        this.element.removeAttribute('disabled')
+        this.element.removeAttribute('disabled');
     }
 }
 
