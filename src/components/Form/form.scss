@@ -1,7 +1,7 @@
 .form {
     margin: 30px 0 0 30px;
     display: flex;
-    @media (max-width: 720px) {
+    @media screen and (max-width: 720px) {
         margin: 0 auto;
         max-width: 350px;
         padding-top: 30px;
@@ -15,7 +15,7 @@
     background-color: rgba(222, 219, 219, 0.712);
     transform: skewX(-45deg);
     cursor: text;
-    @media (max-width: 720px) {
+    @media screen and (max-width: 720px){
         max-width: 200px;
         transform:none
     }
@@ -34,7 +34,7 @@
         outline: 0;
         outline-offset: 0;
     }
-    @media (max-width: 720px) {
+    @media screen and (max-width: 720px) {
         transform:none
     }
 }
@@ -52,7 +52,7 @@
     justify-content: center;
     gap: 5px;
     cursor: pointer;
-    @media (max-width: 720px) {
+    @media screen and (max-width: 720px) {
         transform:none
     }
     &:disabled {
@@ -62,7 +62,7 @@
     &_text {
         transform: skewX(45deg);
         text-transform: uppercase;
-        @media (max-width: 720px) {
+        @media screen and (max-width: 720px) {
             transform:none
         }
     }
@@ -72,14 +72,14 @@
     color: #fff;
     padding: 10px 30px;
     font-size: 1em;
-    @media (max-width: 720px) {
+    @media screen and (max-width: 720px) {
         max-width: 350px;
         margin: 0 auto;
     }
     &_error {
         color: red;
         margin-left: 30px;
-        @media (max-width: 720px) {
+        @media screen and (max-width: 720px) {
             max-width: 350px;
             margin: 0 auto;
         }
